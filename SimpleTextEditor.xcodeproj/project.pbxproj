@@ -19,6 +19,7 @@
 		63D0A491170368F900433596 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D0A48F170368F900433596 /* MainStoryboard.storyboard */; };
 		63D0A494170368F900433596 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D0A493170368F900433596 /* MasterViewController.m */; };
 		63D0A497170368F900433596 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D0A496170368F900433596 /* DetailViewController.m */; };
+		63D0A4A017036CAE00433596 /* SimpleTextDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D0A49F17036CAE00433596 /* SimpleTextDocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,9 @@
 		63D0A493170368F900433596 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		63D0A495170368F900433596 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		63D0A496170368F900433596 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		63D0A49D1703690100433596 /* SimpleTextEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SimpleTextEditor.entitlements; sourceTree = "<group>"; };
+		63D0A49E17036CAE00433596 /* SimpleTextDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTextDocument.h; sourceTree = "<group>"; };
+		63D0A49F17036CAE00433596 /* SimpleTextDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTextDocument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 		63D0A47D170368F900433596 /* SimpleTextEditor */ = {
 			isa = PBXGroup;
 			children = (
+				63D0A49D1703690100433596 /* SimpleTextEditor.entitlements */,
 				63D0A486170368F900433596 /* AppDelegate.h */,
 				63D0A487170368F900433596 /* AppDelegate.m */,
 				63D0A48F170368F900433596 /* MainStoryboard.storyboard */,
@@ -94,6 +99,8 @@
 				63D0A495170368F900433596 /* DetailViewController.h */,
 				63D0A496170368F900433596 /* DetailViewController.m */,
 				63D0A47E170368F900433596 /* Supporting Files */,
+				63D0A49E17036CAE00433596 /* SimpleTextDocument.h */,
+				63D0A49F17036CAE00433596 /* SimpleTextDocument.m */,
 			);
 			path = SimpleTextEditor;
 			sourceTree = "<group>";
@@ -182,6 +189,7 @@
 				63D0A488170368F900433596 /* AppDelegate.m in Sources */,
 				63D0A494170368F900433596 /* MasterViewController.m in Sources */,
 				63D0A497170368F900433596 /* DetailViewController.m in Sources */,
+				63D0A4A017036CAE00433596 /* SimpleTextDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +274,7 @@
 		63D0A49B170368F900433596 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SimpleTextEditor/SimpleTextEditor.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleTextEditor/SimpleTextEditor-Prefix.pch";
 				INFOPLIST_FILE = "SimpleTextEditor/SimpleTextEditor-Info.plist";
@@ -277,6 +286,7 @@
 		63D0A49C170368F900433596 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SimpleTextEditor/SimpleTextEditor.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleTextEditor/SimpleTextEditor-Prefix.pch";
 				INFOPLIST_FILE = "SimpleTextEditor/SimpleTextEditor-Info.plist";

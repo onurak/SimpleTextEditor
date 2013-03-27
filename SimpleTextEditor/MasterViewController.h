@@ -10,4 +10,6 @@
 
 @interface MasterViewController : UITableViewController
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *addButton;
+
 @end

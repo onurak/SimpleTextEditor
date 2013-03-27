@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SimpleTextDocument.h"
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController <SimpleTextDocumentDelegate>
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) NSURL *detailItem;
+@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end
